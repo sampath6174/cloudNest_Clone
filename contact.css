@@ -7,6 +7,8 @@
 html {
   font-family: 15px;
   background-color: rgb(235, 235, 235);
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
 }
 #horizontal-scroll{
     height: 4px;
@@ -337,12 +339,55 @@ html {
     text-decoration: none;
     color:rgb(173, 168, 168);
 }
+
+.btns{
+  width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.btns button{
+  width: 46%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+}
+.btns button:nth-child(1){
+  border: 1px solid grey;
+}
+.btns button:nth-child(2){
+  background-color: blueviolet;
+  color: white;
+}
+.top{
+  height: 3rem;
+  width: 3rem;
+  background-color: orange;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.top i{
+  font-size: 1.2rem;
+
+}
+
+
 /* media queries */
 @media screen and (max-width:480px){
-    html{
+ 
+html{
     font-family: 10px;
     background-color: rgb(235, 235, 235);
-}
+        scroll-behavior: smooth;
+        scroll-padding-top: 0;
+    }
 #horizontal-scroll{
     height: 4px;
     width: 100%;
@@ -607,14 +652,14 @@ html {
     background-color: aliceblue;
     color: black;
 }
-.contact-box4-item234 a{
-    margin-bottom: .1rem;
+.contact-box4-item234 p{
+    margin-bottom: 0rem;
     color: rgb(173, 168, 168);
     display: block;
     width: max-content;
-    margin: 0.1rem;
+    margin: 0rem;
 }
-.contact-box4-item234 a:hover{
+.contact-box4-item234 p:hover{
     color: white;
     cursor: pointer;
     margin: 0.1rem 0;
@@ -622,7 +667,7 @@ html {
 .contact-box4-item234{
     font-size: 1.2rem;
     width: 95%;
-    margin:1rem 0;
+    margin:0rem 0;
 }
 .contact-box4-div2{
     margin-top: 0.2rem;
@@ -644,8 +689,54 @@ html {
 .contact-box4-a a:hover{
     color: white;
 }
+
+.btns{
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+.btns button{
+  width: 48%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+}
+.btns button:nth-child(1){
+  border: 1px solid grey;
+  padding: 1rem;
+}
+.btns button:nth-child(2){
+  background-color: blueviolet;
+  color: white;
+  padding: 1rem;
+}
+.top{
+  height: 3rem;
+  width: 3rem;
+  background-color: orange;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.top i{
+  font-size: 1.2rem;
+
+}
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 0;
+    }
   #nav{
     height: 60px;
     background-color: rgb(255, 255, 255);
@@ -909,6 +1000,47 @@ html {
   margin-right: 1rem;
   text-decoration: none;
   color: rgb(173, 168, 168);
+}
+.btns{
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+.btns button{
+  width: 48%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+}
+.btns button:nth-child(1){
+  border: 1px solid grey;
+  padding: 1rem;
+}
+.btns button:nth-child(2){
+  background-color: blueviolet;
+  color: white;
+  padding: 1rem;
+}
+.top{
+  height: 3rem;
+  width: 3rem;
+  background-color: orange;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.top i{
+  font-size: 1.2rem;
+
 }
 }
 
