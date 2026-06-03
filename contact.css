@@ -1,0 +1,916 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  font-family: 15px;
+  background-color: rgb(235, 235, 235);
+}
+#horizontal-scroll{
+    height: 4px;
+    width: 100%;
+    background-color: blueviolet;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#nav {
+  min-height: 70px;
+  padding: 0 1rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 4px;
+  z-index: 999;
+}
+.nav-item1 {
+  width: 20%;
+  height: 80%;
+  cursor: pointer;
+}
+.nav-item1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.nav-item2 {
+  width: 40%;
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-ul li {
+  list-style: none;
+  color: rgb(100, 99, 99);
+}
+.nav-a {
+  text-decoration: none;
+  color: rgb(91, 90, 90);
+}
+.nav-a:hover {
+  color: black;
+}
+.nav-item3 {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-item3 i {
+  transform: rotate(-20deg);
+  color: rgb(100, 99, 99);
+}
+.nav-item3 i:hover {
+  color: black;
+}
+.nav-item3 button {
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  border: none;
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.nav-item3 a {
+  padding: 0.5rem;
+}
+.nav-ul li {
+  transition: color 0.2s ease;
+}
+.nav-ul li:hover {
+  cursor: pointer;
+  color: black;
+}
+.nav-item3 a:hover {
+  background-color: rgba(205, 192, 192, 0.5);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.nav-item4 {
+  display: none;
+  font-size: 2rem;
+
+}
+.nav-item3 a:nth-child(2) {
+  visibility: none;
+}
+.ham-input{
+    display:none;
+}
+
+.div-in-hamburger{
+    width:100%;
+    background:white;
+    position:fixed;
+    top:-250px;
+    right: 0;
+    transition:0.4s ease;
+    border-radius: 0 0 8px 8px;
+    
+}
+
+.ham-input:checked ~ .div-in-hamburger{
+    top: 74px;
+}
+.div-in-hamburger div{
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.ham-a{
+  text-decoration: none;
+  color: rgb(83, 82, 82);
+  font-weight: bold;
+}
+/* blog-box1 */
+.contact-box1 {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f46e5;
+}
+.contact-box1-div1 {
+  text-align: center;
+  margin: 2rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-box1-div1 p:nth-child(1){
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contact-box1-div1 p:nth-child(2) {
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(194, 192, 192);
+}
+.contact-box1-div2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.contact-box1-div2 a {
+  color: rgb(186, 183, 183);
+  text-decoration: none;
+}
+.contact-box1-div2 a:hover {
+  color: white;
+}
+
+/* contact box2 */
+.contact-box2{
+    padding: 6rem 2rem;
+    display: flex;
+}
+.contact-box2-div1{
+    width: 58%;
+}
+.contact-p1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem ;
+}
+.contact-p2{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.contact-div1-subdiv1{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.subdiv1-item1{
+    width: 48%;
+}
+.subdiv1-item1 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+
+}
+.contact-div1-subdiv2{
+    margin: 2rem 0;
+}
+.contact-div1-subdiv3{
+    margin: 2rem 0;
+}
+.contact-div1-subdiv2 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    
+}
+.contact-div1-subdiv3 input{
+    width: 100%;
+    height: 10rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+}
+.contact-box2-button{
+    height: 3rem;
+    width: 35vh;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+.contact-box2-div2{
+    padding-left: 3rem;
+}
+.contact-box2-div2 h2, .contact-box2-div2-p {
+    margin-bottom: 1rem;
+}
+.contact-box2-div2container1, .contact-box2-div2container2, .contact-box2-div2container3, .contact-box2-div2container4{
+    margin: 1.5rem 0;
+}
+.contact-support-p1{
+    margin-bottom: 0;
+}
+.contact-h4{
+    margin-bottom: 0.3rem;
+}
+.contact-container1-subdiv1{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(137, 136, 133, 0.251);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box2-div2-container{
+    display: flex;
+    gap: 1rem;
+}
+.contact-box2-div2-container i{
+    font-size: 1.5rem;
+}
+/* contact box3 */
+.contact-box3 iframe{
+    height: 350px;
+    width: 100%;
+}
+/* contact box4 */
+
+.contact-box4{
+    padding: 2.5rem 0 0 0 ;
+    color: rgb(173, 168, 168);
+    background-color: rgb(14, 13, 20);
+
+}
+.contact-box4-div1{
+    padding: 3rem 3.5rem;
+    display: flex;
+}
+.contact-box4-div1 img{
+    height: 3rem;
+    margin-bottom: 1rem;
+
+}
+.contact-box4-item1{
+    width: 35%;
+}
+.contact-box4-item1, .contact-box4-item2, .contact-box4-item3, .contact-box4-item4{
+    padding: 0.5rem 0;
+}
+.contact-box4-item-h4{
+    margin: 1rem 0;
+    color: white;
+}
+.contact-box4-item2, .contact-box4-item3, .contact-box4-item4{
+    width: 25%;
+}
+.contact-box4-item1 p{
+    width: 70%;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+.contact-box4-i{
+    border-radius: 50%;
+    font-size: 2.2rem;
+}
+.contact-box4-social{
+    display: flex;
+}
+.contact-box4-social div{
+    font-size: 2.5rem;
+    background-color: rgba(113, 110, 110, 0.304);
+    margin-right: 0.7rem;
+    border-radius: 8px;
+}
+.contact-box4-item234 p{
+    margin-bottom: 1.55rem;
+    color: rgb(173, 168, 168);
+
+}
+.contact-box4-div2{
+    height: 5rem;
+    padding: 0 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-box4-a a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color:rgb(173, 168, 168);
+}
+/* media queries */
+@media screen and (max-width:480px){
+    html{
+    font-family: 10px;
+    background-color: rgb(235, 235, 235);
+}
+#horizontal-scroll{
+    height: 4px;
+    width: 100%;
+    background-color: blueviolet;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#nav{
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-item1{
+    width: 60%;
+    height: 90%;
+    cursor: pointer;
+}
+.nav-item1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+}
+.nav-item2{
+    display: none;
+}
+
+.nav-item3{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-item3 i{
+    transform: rotate(-20deg);
+    color: rgb(52, 51, 51);
+    font-size: 1.8rem;
+}
+
+.nav-item3 button{
+    display: none;
+}
+.nav-item3 a{
+    padding: 8px;
+}
+.nav-item4{
+    display: block;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.nav-item4 button{
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    color: rgb(45, 45, 45);
+}
+/* blog-box1 */
+.contact-box1 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f46e5;
+}
+.contact-box1-div1 {
+  text-align: center;
+  margin: 2rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-box1-div1 p:nth-child(1){
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contact-box1-div1 p:nth-child(2) {
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(194, 192, 192);
+}
+.contact-box1-div2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.contact-box1-div2 a {
+  color: rgb(186, 183, 183);
+  text-decoration: none;
+}
+.contact-box1-div2 a:hover {
+  color: white;
+}
+
+/* contact box2 */
+.contact-box2{
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction:column ;
+}
+.contact-box2-div1{
+    width: 100%;
+    margin: 1rem 0;
+}
+.contact-p1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem ;
+}
+.contact-p2{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.contact-div1-subdiv1{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.subdiv1-item1{
+    width: 48%;
+}
+.subdiv1-item1 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+
+}
+.contact-div1-subdiv2{
+    margin: 1rem 0;
+}
+.contact-div1-subdiv3{
+    margin: 1rem 0;
+}
+.contact-div1-subdiv2 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    
+}
+.contact-div1-subdiv3 input{
+    width: 100%;
+    height: 10rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+}
+.contact-box2-button{
+    height: 3rem;
+    width: 20vh;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+.contact-box2-div2{
+    margin: 1rem 0;
+    padding-left: 0;
+}
+.contact-box2-div2 h2, .contact-box2-div2-p {
+    margin-bottom: 1rem;
+}
+.contact-box2-div2container1, .contact-box2-div2container2, .contact-box2-div2container3, .contact-box2-div2container4{
+    margin: 1.5rem 0;
+}
+.contact-support-p1{
+    margin-bottom: 0;
+}
+.contact-h4{
+    margin-bottom: 0.3rem;
+}
+.contact-container1-subdiv1{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(137, 136, 133, 0.251);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box2-div2-container{
+    display: flex;
+    gap: 1rem;
+}
+.contact-box2-div2-container i{
+    font-size: 1.5rem;
+}
+/* contact box3 */
+.contact-box3 iframe{
+    height: 300px;
+    width: 100%;
+}
+
+/* contact-box4 */
+.contact-box4{
+    padding: 1rem 0 ;
+    color: rgb(173, 168, 168);
+    background-color: rgb(14, 13, 20);
+
+}
+.contact-box4-div1{
+    padding: 0.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.contact-box4-div1 img{
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+
+}
+.contact-box4-item1{
+    width: 95%;
+}
+
+.contact-box4-item-h4{
+    margin: 0.1rem 0;
+    color: white;
+    
+}
+.contact-box4-item2, .contact-box4-item3, .contact-box4-item4{
+    width: 95%;
+}
+.contact-box4-item1 a{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: block;
+}
+.contact-box4-item1 a:hover{
+    color: white;
+    cursor: pointer;
+}
+.contact-box4-i{
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.contact-box4-social{
+    display: flex;
+}
+.contact-box4-social div{
+    height: 3rem;
+    background: none ;
+    margin-right: 0.7rem;
+    border-radius: 8px;
+}
+.contact-box4-social div:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.contact-box4-item234 a{
+    margin-bottom: .1rem;
+    color: rgb(173, 168, 168);
+    display: block;
+    width: max-content;
+    margin: 0.1rem;
+}
+.contact-box4-item234 a:hover{
+    color: white;
+    cursor: pointer;
+    margin: 0.1rem 0;
+}
+.contact-box4-item234{
+    font-size: 1.2rem;
+    width: 95%;
+    margin:1rem 0;
+}
+.contact-box4-div2{
+    margin-top: 0.2rem;
+    height: 2rem;
+    padding: 0 .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+
+}
+.contact-box4-a a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color:rgb(173, 168, 168);
+
+}
+.contact-box4-a a:hover{
+    color: white;
+}
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  #nav{
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-item1{
+    width: 60%;
+    height: 90%;
+    cursor: pointer;
+}
+.nav-item1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+}
+.nav-item2{
+    display: none;
+}
+
+.nav-item3{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-item3 i{
+    transform: rotate(-20deg);
+    color: rgb(52, 51, 51);
+    font-size: 1.8rem;
+}
+
+.nav-item3 button {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.7rem;
+  border: none;
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.nav-item3 a{
+    padding: 8px;
+}
+.nav-item4{
+    display: block;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+.nav-item4 button{
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    color: rgb(45, 45, 45);
+}
+
+/* contact-box1 */
+.contact-box1{
+    padding: 1rem 0;
+
+}
+.contact-box1-div1{
+    text-align: center;
+    margin: 0.5rem 0;
+    color:white ;
+}
+.contact-box1-div1 p:nth-child(1){
+    font-size: 2rem;
+    font-weight: bold;
+}
+.contact-box1-div1 p:nth-child(2){
+    width: 84%;
+    margin: auto;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.contact-box1-div2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    color: white;
+}
+.contact-box1-div2 a{
+    color: rgb(186, 183, 183);
+    text-decoration: none;
+}
+.contact-box1-div2 a:hover{
+    color: white;
+}
+
+/* contact box2 */
+.contact-box2{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction:column ;
+}
+.contact-box2-div1{
+    width: 100%;
+    margin: 1rem 0;
+}
+.contact-p1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem ;
+}
+.contact-p2{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.contact-div1-subdiv1{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.subdiv1-item1{
+    width: 48%;
+}
+.subdiv1-item1 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+
+}
+.contact-div1-subdiv2{
+    margin: 1rem 0;
+}
+.contact-div1-subdiv3{
+    margin: 1rem 0;
+}
+.contact-div1-subdiv2 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    
+}
+.contact-div1-subdiv3 input{
+    width: 100%;
+    height: 10rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+}
+.contact-box2-button{
+    height: 3rem;
+    width: 50vh;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+.contact-box2-div2{
+    margin: 1rem 0;
+    padding-left: 0;
+}
+.contact-box2-div2 h2, .contact-box2-div2-p {
+    margin-bottom: 1rem;
+}
+.contact-box2-div2container1, .contact-box2-div2container2, .contact-box2-div2container3, .contact-box2-div2container4{
+    margin: 1.5rem 0;
+}
+.contact-support-p1{
+    margin-bottom: 0;
+}
+.contact-h4{
+    margin-bottom: 0.3rem;
+}
+.contact-container1-subdiv1{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(137, 136, 133, 0.251);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box2-div2-container{
+    display: flex;
+    gap: 1rem;
+}
+.contact-box2-div2-container i{
+    font-size: 1.5rem;
+}
+/* contact box3 */
+.contact-box3 iframe{
+    height: 300px;
+    width: 100%;
+}
+
+ /* contact-box4 */
+.contact-box4 {
+  padding: 1rem 0 0 0;
+  color: rgb(173, 168, 168);
+  background-color: rgb(14, 13, 20);
+}
+.contact-box4-div1 {
+  padding: 3rem 3.5rem;
+  display: flex;
+}
+.contact-box4-div1 img {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+.contact-box4-item1 {
+  width: 35%;
+}
+.contact-box4-item1,
+.contact-box4-item2,
+.contact-box4-item3,
+.contact-box4-item4 {
+  padding: 0.5rem 0;
+}
+.contact-box4-item-h4 {
+  margin: 1rem 0;
+  color: white;
+}
+.contact-box4-item2,
+.contact-box4-item3,
+.contact-box4-item4 {
+  width: 25%;
+}
+.contact-box4-item1 p {
+  width: 70%;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.contact-box4-i {
+  border-radius: 50%;
+  font-size: 2.2rem;
+}
+.contact-box4-social {
+  display: flex;
+}
+.contact-box4-social div {
+  font-size: 2.5rem;
+  background-color: rgba(113, 110, 110, 0.304);
+  margin-right: 0.7rem;
+  border-radius: 8px;
+}
+.contact-box4-item234 p {
+  margin-bottom: 1.55rem;
+  color: rgb(173, 168, 168);
+}
+.contact-box4-div2 {
+  height: 5rem;
+  padding: 0 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-box4-a a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgb(173, 168, 168);
+}
+}
+
+
+
