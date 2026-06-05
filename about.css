@@ -183,6 +183,19 @@ html{
  .about-box2-right{
     padding: 2rem;
     width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+.about-box2-right video{
+    position: absolute;
+    left: -400px;
+    top: 100px;
+    transform: scale(2);
+}
+.about-box2-right:hover video:nth-child(2){
+    display: none;
 }
 .about-box2-left p{
     margin-bottom: 1rem;
@@ -207,11 +220,7 @@ html{
     line-height: 1.3rem;
     letter-spacing: 0.1rem;
 }
-.about-box2-right img{
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-}
+
 /* About box3 */
 .about-box3{
     background-color: rgba(213, 213, 211, 0.507);
@@ -315,6 +324,9 @@ html{
     margin-bottom: 0.25rem;
     font-weight: bold;
     font-size: 1.15rem;
+}
+.about-box4{
+    display: none;
 }
 
 /* products-box5 */
@@ -437,7 +449,82 @@ html{
 .top i{
   font-size: 1.2rem;
 
+
 }
+.top{
+      animation: top 1.5s ease-in-out infinite;
+}
+@keyframes top{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0px goldenrod;
+    }50%{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 1px goldenrod;
+    }100%{
+        transform: scale(1);
+        box-shadow: 0 0 0px goldenrod;
+    }
+}
+
+/* 3d card flip */
+.about-box4-3d{
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 1rem 0 5rem 0;
+    text-align: center;
+}
+.box4-div2-3d{
+    display: flex;
+    justify-content: space-evenly;
+    perspective: 1000px;
+}
+.box4-card-3d{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform .3s;
+}
+.front, .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+.front img{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.front{
+    background-color: peru;
+    transform: rotateY(0);
+}
+.back{
+    background-color: #4f46e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+
+}
+.back .p1{
+    font-size: 2rem;
+}
+.box4-card-3d:hover {
+    transform: rotateY(180deg);
+
+}
+.box4-card-3d:hover {
+    transform: rotateY(180deg);
+}
+
 
 @media screen and (max-width:480px){
     html{

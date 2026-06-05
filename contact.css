@@ -377,6 +377,21 @@ html {
   font-size: 1.2rem;
 
 }
+.top{
+      animation: top 1.5s ease-in-out infinite;
+}
+@keyframes top{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0px goldenrod;
+    }50%{
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 1px goldenrod;
+    }100%{
+        transform: scale(1);
+        box-shadow: 0 0 0px goldenrod;
+    }
+}
 
 
 /* media queries */
