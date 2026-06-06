@@ -38,6 +38,7 @@
     <label for="ham" class="nav-ham">
         <i class="fa-solid fa-bars hamburger"></i>
     </label>
+    <label for="ham" class="overlay"></label>
 
     <div class="div-in-hamburger">
         <div><a class="ham-a" href="index.html">HOME</a></div>
@@ -48,7 +49,7 @@
     </div>
      </section>
      <!-- Products -->
-     <section id="produtcts">
+     <section id="products">
         <section class="products-box1">
             <div class="products-left">
                 <div class="products-left-1">
@@ -65,7 +66,7 @@
                             <span>Edge</span>
                             <span>Scale</span>
                             <span>Cloud</span>
-                            <span>Speed of Light</span> <!-- duplicate -->
+                            <span>Speed of Light</span> 
                         </span>
                     </p>
                 </div>
@@ -73,8 +74,8 @@
                     <p>The developer-first cloud platform for deploying, scaling, and managing modern applications. Push your code and let CloudNest handle the rest.</p>
                 </div>
                 <div class="products-left-4">
-                    <button class="left-button1"><a href="">Start Depoying Free <i class="fa-solid fa-arrow-right-long"></i></a></button>
-                    <button class="left-button2">View Documentation</button>
+                    <a class="left-button1">Start Deploying Free <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a class="left-button2" href="#products-box3">View Documentation</a>
                 </div>
                 <div class="products-left-5">
                     <div class="left-5-div1 left-5-div">
@@ -147,7 +148,7 @@
                 <p>Active Teams</p>
             </div>
         </section>
-        <section class="products-box3">
+        <section class="products-box3" id="products-box3" >
             <div class="box3-div1">
                 <p class="box3-p1">Products</p>
                 <h2>Everything You Need to Ship</h2>
@@ -199,9 +200,10 @@
                 <h2>Loved by Developers</h2>
                 <p class="box3-p2">See what engineering teams around the world say about building on CloudNest.</p>
             </div>
-            <div class="box4-div2">
+            <div class="box4-div2-outer">
+                <div class="box4-div2-inner">
                 <div class="box4-card">
-                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span>
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
                     <p>“CloudNest cut our deployment time from 30 minutes to 30 seconds. The Git integration is seamless and the DX is unmatched.”</p>
                     </div>
                     <div class="box4-card-div2">
@@ -213,7 +215,7 @@
                     </div>
                 </div>
                 <div class="box4-card">
-                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span>
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
                     <p>“We migrated from AWS and our infrastructure costs dropped 40%. The managed databases are incredibly reliable with zero maintenance overhead.”</p>
                     </div>
                     <div class="box4-card-div2">
@@ -225,7 +227,7 @@
                     </div>
                 </div>
                 <div class="box4-card">
-                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span>
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
                     <p>“The edge functions are a game changer. Our API response times went from 200ms to under 50ms globally. Our users noticed immediately.”</p>
                     </div>
                     <div class="box4-card-div2">
@@ -237,7 +239,7 @@
                     </div>
                 </div>
                 <div class="box4-card">
-                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span>
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
                     <p>“Finally a cloud platform that doesn't require a PhD to configure. CloudNest makes infrastructure feel like it should — invisible.”</p>
                     </div>
                     <div class="box4-card-div2">
@@ -249,7 +251,7 @@
                     </div>
                 </div>
                 <div class="box4-card">
-                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </span>
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
                     <p>“The developer experience is exceptional. From local dev to production, CloudNest makes the entire workflow effortless.”</p>
                     </div>
                     <div class="box4-card-div2">
@@ -261,6 +263,70 @@
                     </div>
                 </div>
                 
+                </div>
+                <div aria-hidden="true" class="box4-div2-inner">
+                <div class="box4-card">
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
+                    <p>“CloudNest cut our deployment time from 30 minutes to 30 seconds. The Git integration is seamless and the DX is unmatched.”</p>
+                    </div>
+                    <div class="box4-card-div2">
+                        <div class="box4-square"><p>S</p></div>
+                        <div class="box4-info">
+                            <p>Sarah Chen</p>
+                            <p>CTO, DataStream</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box4-card">
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
+                    <p>“We migrated from AWS and our infrastructure costs dropped 40%. The managed databases are incredibly reliable with zero maintenance overhead.”</p>
+                    </div>
+                    <div class="box4-card-div2">
+                        <div class="box4-square"><p>M</p></div>
+                        <div class="box4-info">
+                            <p>Marcus Rodriguez</p>
+                            <p>Lead Engineer, Fintech Labs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box4-card">
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
+                    <p>“The edge functions are a game changer. Our API response times went from 200ms to under 50ms globally. Our users noticed immediately.”</p>
+                    </div>
+                    <div class="box4-card-div2">
+                        <div class="box4-square"><p>A</p></div>
+                        <div class="box4-info">
+                            <p>Aisha Patel</p>
+                            <p>VP Engineer, NovaTech</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box4-card">
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
+                    <p>“Finally a cloud platform that doesn't require a PhD to configure. CloudNest makes infrastructure feel like it should — invisible.”</p>
+                    </div>
+                    <div class="box4-card-div2">
+                        <div class="box4-square"><p>J</p></div>
+                        <div class="box4-info">
+                            <p>James Wright</p>
+                            <p>Indie Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box4-card">
+                    <div class="box4-card-div1" ><span class="box4-stars"><i class="fa-solid fa-star star1"></i><i  class="fa-solid fa-star star2"></i><i class="fa-solid fa-star star3"></i><i class="fa-solid fa-star star4"></i><i class="fa-solid fa-star star5"></i> </span>
+                    <p>“The developer experience is exceptional. From local dev to production, CloudNest makes the entire workflow effortless.”</p>
+                    </div>
+                    <div class="box4-card-div2">
+                        <div class="box4-square"><p>D</p></div>
+                        <div class="box4-info">
+                            <p>David Kim</p>
+                            <p>Staff Engineer, Shopwise</p>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
             </div>
         </section>
         <section class="products-box5">
@@ -271,7 +337,7 @@
             </div>
             <div class="products-box5-div2">
                 <div class="products-faq-item">
-                    <input type="radio" name="faq" id="faq1">
+                    <input type="checkbox" name="faq" id="faq1">
                     <label for="faq1" class="products-faq-question">
                         <span >What frameworks and languages does CloudNest support?</span>
                         <span>+</span>
@@ -282,7 +348,7 @@
                 </div>
                 <hr>
                 <div class="products-faq-item">
-                    <input type="radio" name="faq" id="faq2">
+                    <input type="checkbox" id="faq2">
                     <label for="faq2" class="products-faq-question">
                         <span>How does pricing work?</span>
                         <span>+</span>
@@ -293,7 +359,7 @@
                 </div>
                 <hr>
                 <div class="products-faq-item">
-                    <input type="radio" name="faq" id="faq3">
+                    <input type="checkbox" id="faq3">
                     <label for="faq3" class="products-faq-question">
                         <span>What is your uptime quarantee?</span>
                         <span>+</span>
@@ -304,7 +370,7 @@
                 </div>
                 <hr>   
                 <div class="products-faq-item">
-                    <input type="radio" name="faq" id="faq4">
+                    <input type="checkbox" id="faq4">
                     <label for="faq4" class="products-faq-question">
                         <span>Can i migrate from my current provider?</span>
                         <span>+</span>
@@ -315,7 +381,7 @@
                 </div>
                 <hr>
                 <div class="products-faq-item">
-                    <input type="radio" name="faq" id="faq5">
+                    <input type="checkbox" id="faq5">
                     <label for="faq5" class="products-faq-question">
                         <span>How do you handle security and compilance?</span>
                         <span>+</span>
@@ -332,11 +398,27 @@
                 <p>Join 10,000+ developers who deploy with confidence on CloudNest. Start free, scale without limits.</p>
             </div>
             <div class="box6-div2">
-                <a href="pricing.html" >Get Started Free</a >
-                <a href="pricing.html" >Talk to Sales</a >
+                <a class="box6-btn1" href="pricing.html">
+    <span class="box6-span1">Get Started Free</span>
+
+    <video class="box6-video1" autoplay muted loop >
+        <source src="liquid-btn-1.mp4" type="video/mp4">
+    </video>
+    
+</a>
+                <a class="box6-btn2" href="pricing.html">
+    <span class="box6-span2">Talk To Sales</span>
+
+    <video class="box6-video3" autoplay muted loop >
+        <source src="liquid-btn-2.mp4" type="video/mp4">
+    </video>
+    
+</a>
             </div>
         </section>
         <section class="products-box7">
+            <video loop autoplay muted class="box7-video1" src="footer.mp4"></video>
+            <video  class="box7-video2" src="footer.mp4"></video>
             <div class="products-box7-div1">
                 <div class="products-box7-item1">
                     <a href="index.html"> <img src="logo2.svg" alt=""></a>
@@ -387,7 +469,7 @@
         <button> <i class="fa-solid fa-book-open products-book"></i>View Docs</button>
         <button>Sign Up</button>
      </section>
-     <div class="top"><a href="#top"><i class="fa-solid fa-angle-up"></i></a></div>
+     <div class="top"><a href="#top"><i class="fa-solid fa-angle-up products-up"></i></a></div>
     
 </body>
 </html>
