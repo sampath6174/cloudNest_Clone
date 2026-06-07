@@ -131,6 +131,18 @@ html {
   color: rgb(83, 82, 82);
   font-weight: bold;
 }
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  inset: 0;
+}
+.div-in-hamburger {
+  z-index: 999;
+}
+.ham-input:checked ~ .overlay {
+  display: block;
+}
 /* contact-box1 */
 .contact-box1 {
   padding: 3rem;
@@ -272,13 +284,18 @@ html {
     margin: 2rem 0;
 }
 
-.contact-div1-subdiv3 input{
+.contact-div1-subdiv3 textarea{
     width: 100%;
     height: 10rem;
     border-radius: 8px;
     border: 1px solid grey;
     padding: 0.5rem;
     margin-top: 0.2rem;
+    background: none;
+}
+textarea:focus{
+  outline: none;
+  border: 2px solid orangered;
 }
 .contact-box2-button{
     height: 3rem;
@@ -724,6 +741,10 @@ html{
     background: none;
     box-sizing: border-box;
     resize: none;
+}
+textarea:focus{
+  outline: none;
+  border: 2px solid orangered;
 }
 .contact-box2-button{
     height: 3rem;

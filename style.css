@@ -10,6 +10,7 @@ html {
   background-color: rgb(235, 235, 235);
   scroll-behavior: smooth;
 }
+
 #horizontal-scroll {
   height: 4px;
   width: 100%;

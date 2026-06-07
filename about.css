@@ -130,6 +130,18 @@ html{
   color: rgb(83, 82, 82);
   font-weight: bold;
 }
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  inset: 0;
+}
+.div-in-hamburger {
+  z-index: 999;
+}
+.ham-input:checked ~ .overlay {
+  display: block;
+}
 /* about-box1 */
 .about-box1{
     padding: 3rem;

@@ -131,6 +131,18 @@ html{
   color: rgb(83, 82, 82);
   font-weight: bold;
 }
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  inset: 0;
+}
+.div-in-hamburger {
+  z-index: 999;
+}
+.ham-input:checked ~ .overlay {
+  display: block;
+}
 /* pricing-box1 */
 .pricing-box1{
     padding: 3rem;
@@ -263,28 +275,65 @@ html{
 .pricing-box2-card-div4 button:hover{
     cursor: pointer;
 }
-.pricing-box2-card2-div1 p{
+#pricing-box2-card1,
+#pricing-box2-card2,
+#pricing-box2-card3{
+  position: relative;
+}
+.pricing-box2-card1-div1 p{
     border: 2px solid blueviolet;
     width: max-content;
     position: absolute;
-    top: -12px;
-    left: 140px;
+    top: -11px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 0 1rem;
+    display: none;
+}
+.pricing-box2-card2-div1 p{
+  border: 2px solid blueviolet;
+    width: max-content;
+    position: absolute;
+    top: -11px;
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
     padding: 0 0.3rem;
-
+    display: none;
 }
-#pricing-box2-card2{
-    border: 2px solid blueviolet;
-    position: relative;
+.pricing-box2-card3-div1 p{
+  border: 2px solid blueviolet;
+    width: max-content;
+    position: absolute;
+    top: -11px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 0 0.3rem;
+    display: none;
+}
+.pricing-box2-card:hover .pricing-box2-card1-div1 p,
+.pricing-box2-card:hover .pricing-box2-card2-div1 p,
+.pricing-box2-card:hover .pricing-box2-card3-div1 p{
+  display: block;
+}
+
+.pricing-box2-card:hover{
+  border: 2px solid blueviolet;
+  cursor: pointer;
+
 }
 .pricing-box2-card-div4 button{
     border: none;
 }
 .pricing-box2-card2-div4 button{
-    background-color: blueviolet;
     color: white;
+}
+.pricing-box2-card:hover button{
+      background-color: blueviolet;
+      color: white;
+
 }
 .pricing-box2 p{
     text-align: center;
@@ -319,7 +368,7 @@ html{
     padding: 0 0 1rem 0;
     font-size: 1.2rem;
 }
-input[type="radio"]{
+input[type="checkbox"]{
     display: none;
 }
 .pricing-faq-item{
@@ -776,28 +825,54 @@ input:checked + .pricing-faq-question span:nth-child(2){
 .pricing-box2-card-div4 button:hover{
     cursor: pointer;
 }
-.pricing-box2-card2-div1 p{
+.pricing-box2-card1-div1,
+.pricing-box2-card2-div1,
+.pricing-box2-card3-div1{
+  display: flex;
+  justify-content: center;
+
+}
+.pricing-box2-card1-div1 p{
     border: 2px solid blueviolet;
     width: max-content;
     position: absolute;
-    top: -7px;
-    left: 83px;
+    top: -11px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 0 1rem;
+    display: none;
+}
+.pricing-box2-card2-div1 p{
+  border: 2px solid blueviolet;
+    width: max-content;
+    position: absolute;
+    top: -11px;
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
     padding: 0 0.3rem;
-
+    display: none;
+}
+.pricing-box2-card3-div1 p{
+  border: 2px solid blueviolet;
+    width: max-content;
+    margin: auto;
+    position: absolute;
+    top: -11px;
+    color: white;
+    border-radius: 10px;
+    padding: 0 0.3rem;
+    display: none;
 }
 #pricing-box2-card2{
-    border: 2px solid blueviolet;
     position: relative;
 }
 .pricing-box2-card-div4 button{
     border: none;
 }
 .pricing-box2-card2-div4 button{
-    background-color: blueviolet;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .pricing-box2 p{
     text-align: center;
@@ -844,7 +919,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
     padding: 0 0 1rem 0;
     font-size: 0.7rem;
 }
-input[type="radio"]{
+input[type="checkbox"]{
     display: none;
 }
 .pricing-faq-item{
@@ -1276,28 +1351,53 @@ input:checked + .pricing-faq-question span:nth-child(2){
 .pricing-box2-card-div4 button:hover{
     cursor: pointer;
 }
-.pricing-box2-card2-div1 p{
+.pricing-box2-card1-div1,
+.pricing-box2-card2-div1,
+.pricing-box2-card3-div1{
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-box2-card1-div1 p{
     border: 2px solid blueviolet;
     width: max-content;
     position: absolute;
-    top: -7px;
-    left: 83px;
+    top: -11px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 0 1rem;
+    display: none;
+}
+.pricing-box2-card2-div1 p{
+  border: 2px solid blueviolet;
+    width: max-content;
+    position: absolute;
+    top: -11px;
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
     padding: 0 0.3rem;
-
+    display: none;
+}
+.pricing-box2-card3-div1 p{
+  border: 2px solid blueviolet;
+    position: absolute;
+    top: -11px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 0 0.3rem;
+    display: none;
 }
 #pricing-box2-card2{
-    border: 2px solid blueviolet;
     position: relative;
 }
 .pricing-box2-card-div4 button{
     border: none;
 }
 .pricing-box2-card2-div4 button{
-    background-color: blueviolet;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .pricing-box2 p{
     text-align: center;
@@ -1313,7 +1413,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
 
   /* pricing-box3 */
   .pricing-box3 {
-    padding: 2remff 0 5rem 0;
+    padding: 2rem 0 5rem 0;
     background-color: white;
   }
   .pricing-box3-div1 {
@@ -1344,7 +1444,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
     width: 95%;
     text-align: center;
   }
-  input[type="radio"] {
+  input[type="checkbox"]{
     display: none;
   }
   .pricing-faq-item {
@@ -1393,7 +1493,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
     margin: auto;
   }
 
-  /* pricing-box6 */
+  /* pricing-box4 */
   .pricing-box4 {
     padding: 1rem;
     display: flex;
@@ -1461,7 +1561,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
 
  /* pricing-box5 */
 .pricing-box5 {
-  padding: 1rem 0 0 0;
+  padding: 0 0 4rem 0;
   color: rgb(173, 168, 168);
   background-color: rgb(14, 13, 20,0.5);
 }
