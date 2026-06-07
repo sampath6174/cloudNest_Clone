@@ -419,86 +419,117 @@ input:checked + .pricing-faq-question span:nth-child(2){
     border: 1.7px solid white;
 }
 
-/* pricing-box7 */
-.pricing-box5{
-    padding: 2.5rem 0 0 0 ;
-    color: rgb(173, 168, 168);
-    background-color: rgb(14, 13, 20);
+/* pricing-box5 */
 
+.pricing-box5 {
+  padding: 0rem 0 0 0;
+  color: rgb(173, 168, 168);
+  background-color: rgb(14, 13, 20, 0.6);
+  overflow: hidden;
+  position: relative;
 }
-.pricing-box5-div1{
-    padding: 3rem 3.5rem;
-    display: flex;
+.box5-video1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  object-fit: cover;
 }
-.pricing-box5-div1 img{
-    height: 3rem;
-    margin-bottom: 1rem;
-
+.box5-video2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
 }
-.pricing-box5-item1{
-    width: 35%;
+.pricing-box5:hover .box5-video2 {
+  display: none;
 }
-.pricing-box5-item1, .pricing-box5-item2, .pricing-box5-item3, .pricing-box5-item4{
-    padding: 0.5rem 0;
+.pricing-box5-div1 {
+  padding: 3rem 3.5rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: none;
 }
-.pricing-box5-item-h4{
-    margin: 1rem 0;
-    color: white;
+.pricing-box5-div1 img {
+  height: 3rem;
+  margin-bottom: 1rem;
 }
-.pricing-box5-item2, .pricing-box5-item3, .pricing-box5-item4{
-    width: 25%;
+.pricing-box5-item1 {
+  width: 35%;
 }
-.pricing-box5-item1 a{
-    width: 70%;
-    margin-bottom: 1.2rem;
-    font-size: 1.2rem;
-    display: block;
+.pricing-box5-item1,
+.pricing-box5-item2,
+.pricing-box5-item3,
+.pricing-box5-item4 {
+  padding: 0.5rem 0;
 }
-.pricing-box5-item1 a:hover{
-    color: white;
-    cursor: pointer;
+.pricing-box5-item-h4 {
+  margin: 1rem 0;
+  color: white;
 }
-.pricing-box5-i{
-    border-radius: 50%;
-    font-size: 2.2rem;
+.pricing-box5-item2,
+.pricing-box5-item3,
+.pricing-box5-item4 {
+  width: 25%;
 }
-.pricing-box5-social{
-    display: flex;
+.pricing-box5-item1 p {
+  width: 70%;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
 }
-.pricing-box5-social div{
-    font-size: 2.5rem;
-    background-color: rgba(113, 110, 110, 0.304);
-    margin-right: 0.7rem;
-    border-radius: 8px;
+.pricing-box5-item1 p:hover {
+  cursor: pointer;
+  color: white;
 }
-.pricing-box5-social div:hover{
-    background-color: aliceblue;
-    color: black;
+.pricing-box5-i {
+  border-radius: 50%;
+  font-size: 2.2rem;
 }
-.pricing-box5-item234 a{
-    margin-bottom: 1.55rem;
-    color: rgb(173, 168, 168);
-    display: block;
-    width: max-content;
+.pricing-box5-social {
+  display: flex;
 }
-.pricing-box5-item234 a:hover{
-    color: white;
-    cursor: pointer;
+.pricing-box5-social div {
+  font-size: 2.5rem;
+  background-color: rgba(113, 110, 110, 0.304);
+  margin-right: 0.7rem;
+  border-radius: 8px;
 }
-.pricing-box5-div2{
-    height: 5rem;
-    padding: 0 3.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.pricing-box5-social div:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
 }
-.pricing-box5-a a{
-    margin-right: 1rem;
-    text-decoration: none;
-    color:rgb(173, 168, 168);
+.pricing-box5-item234 p {
+  margin-bottom: 1.55rem;
+  color: rgb(173, 168, 168);
 }
-.pricing-box5-a a:hover{
-    color: white;
+.pricing-box5-item234 p:hover {
+  color: white;
+  cursor: pointer;
+}
+.pricing-box5-div2 {
+  height: 5rem;
+  padding: 0 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 1;
+  background: none;
+}
+.pricing-box5-a a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgb(173, 168, 168);
+}
+.pricing-box5-a a:hover {
+  color: white;
 }
 
 .btns{
@@ -527,6 +558,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
   background-color: orange;
   border-radius: 50%;
   position: fixed;
+  z-index: 999;
   bottom: 25px;
   right: 10px;
   display: flex;
@@ -913,102 +945,111 @@ input:checked + .pricing-faq-question span:nth-child(2){
     border: 1.7px solid white;
 }
 
-/* pricing-box5 */
-.pricing-box5{
-    padding: 1rem 0 ;
+  /* pricing-box5 */
+  .pricing-box5 {
+    padding: 0rem 0 3rem 0;
     color: rgb(173, 168, 168);
-    background-color: rgb(14, 13, 20);
+    background-color: rgb(14, 13, 20, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  .box5-video1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+  }
+  .box5-video2 {
+    display: none;
+  }
 
-}
-.pricing-box5-div1{
+  .pricing-box5-div1 {
     padding: 0.5rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-.pricing-box5-div1 img{
+  }
+  .pricing-box5-div1 img {
     height: 2.5rem;
     margin-bottom: 0.7rem;
-
-}
-.pricing-box5-item1{
+  }
+  .pricing-box5-item1 {
     width: 95%;
-}
+  }
 
-.pricing-box5-item-h4{
+  .pricing-box5-item-h4 {
     margin: 0.1rem 0;
     color: white;
-    
-}
-.pricing-box5-item2, .pricing-box5-item3, .pricing-box5-item4{
+  }
+  .pricing-box5-item2,
+  .pricing-box5-item3,
+  .pricing-box5-item4 {
     width: 95%;
-}
-.pricing-box5-item1 a{
+  }
+  .pricing-box5-item1 a {
     width: 100%;
     margin-bottom: 0.5rem;
     font-size: 1rem;
     display: block;
-}
-.pricing-box5-item1 a:hover{
+  }
+  .pricing-box5-item1 a:hover {
     color: white;
     cursor: pointer;
-}
-.pricing-box5-i{
+  }
+  .pricing-box5-i {
     border-radius: 50%;
     font-size: 2rem;
-}
-.pricing-box5-social{
+  }
+  .pricing-box5-social {
     display: flex;
-}
-.pricing-box5-social div{
+  }
+  .pricing-box5-social div {
     height: 3rem;
-    background: none ;
+    background: none;
     margin-right: 0.7rem;
     border-radius: 8px;
-}
-.pricing-box5-social div:hover{
+  }
+  .pricing-box5-social div:hover {
     background-color: aliceblue;
     color: black;
-}
-.pricing-box5-item234 a{
-    margin-bottom: .1rem;
+  }
+  .pricing-box5-item234 p {
+    margin-bottom: 0rem;
     color: rgb(173, 168, 168);
     display: block;
     width: max-content;
-    margin: 0.1rem;
-}
-.pricing-box5-item234 a:hover{
+    margin: 0rem;
+  }
+  .pricing-box5-item234 a:hover {
     color: white;
     cursor: pointer;
     margin: 0.1rem 0;
-}
-.pricing-box5-item234{
+  }
+  .pricing-box5-item234 {
     font-size: 1.2rem;
     width: 95%;
-    margin:0rem 0;
-}
-.pricing-box5-div2{
+    margin: 0.1rem 0;
+  }
+  .pricing-box5-div2 {
     margin-top: 0.2rem;
     height: 2rem;
-    padding: 0 .9rem;
+    padding: 0 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: .7rem;
-
-}
-.pricing-box5-a a{
+    font-size: 0.7rem;
+  }
+  .pricing-box5-a a {
     margin-right: 1rem;
     text-decoration: none;
-    color:rgb(173, 168, 168);
-
-}
-.pricing-box5-a a:hover{
+    color: rgb(173, 168, 168);
+  }
+  .pricing-box5-a a:hover {
     color: white;
-}
+  }
 
 .btns{
   background-color: white;
@@ -1017,6 +1058,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 999;
   bottom: 0;
 }
 .btns button{
@@ -1417,11 +1459,11 @@ input:checked + .pricing-faq-question span:nth-child(2){
     border: 1.7px solid white;
   }
 
- /* pricing-box7 */
+ /* pricing-box5 */
 .pricing-box5 {
   padding: 1rem 0 0 0;
   color: rgb(173, 168, 168);
-  background-color: rgb(14, 13, 20);
+  background-color: rgb(14, 13, 20,0.5);
 }
 .pricing-box5-div1 {
   padding: 3rem 3.5rem;
@@ -1483,6 +1525,9 @@ input:checked + .pricing-faq-question span:nth-child(2){
   text-decoration: none;
   color: rgb(173, 168, 168);
 }
+.box5-video2{
+  display: none;
+}
 
 .btns{
   background-color: white;
@@ -1491,6 +1536,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 999;
   bottom: 0;
 }
 .btns button{
@@ -1514,6 +1560,7 @@ input:checked + .pricing-faq-question span:nth-child(2){
   background-color: orange;
   border-radius: 50%;
   position: fixed;
+  z-index: 999;
   bottom: 65px;
   right: 10px;
   display: flex;

@@ -131,7 +131,7 @@ html {
   color: rgb(83, 82, 82);
   font-weight: bold;
 }
-/* blog-box1 */
+/* contact-box1 */
 .contact-box1 {
   padding: 3rem;
   display: flex;
@@ -196,31 +196,82 @@ html {
 }
 .subdiv1-item1{
     width: 48%;
+    line-height: 1rem;
+    position: relative;
 }
 .subdiv1-item1 input{
     width: 100%;
     height: 3rem;
     border-radius: 8px;
     border: 1px solid grey;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
+    position: absolute;
+    background:transparent ;
+    outline: none;
+}
+.subdiv1-item1-input:focus,
+.subdiv1-item1-input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+
+}
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.subdiv1-item1-input:focus + .labelline,
+.subdiv1-item1-input:valid + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-5px, -25px) scale(0.8);
 
 }
 .contact-div1-subdiv2{
-    margin: 2rem 0;
-}
-.contact-div1-subdiv3{
-    margin: 2rem 0;
+    line-height: 1rem;
+    position: relative;
+    border: none;
 }
 .contact-div1-subdiv2 input{
     width: 100%;
     height: 3rem;
     border-radius: 8px;
     border: 1px solid grey;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
-    
+    outline: none;
+    padding: 0rem;
+    margin-top: 0rem;
+    position: absolute;
+    background: transparent;
+
 }
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.contact-div1-subdiv2 input:focus,
+.contact-div1-subdiv2 input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+}
+.contact-div1-subdiv2 input:focus + .labelline,
+.contact-div1-subdiv2 input:focus + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-5px, -25px) scale(0.8);
+
+}
+.contact-div1-subdiv3{
+    margin: 2rem 0;
+}
+
 .contact-div1-subdiv3 input{
     width: 100%;
     height: 10rem;
@@ -274,70 +325,118 @@ html {
     height: 350px;
     width: 100%;
 }
-/* contact box4 */
 
-.contact-box4{
-    padding: 2.5rem 0 0 0 ;
-    color: rgb(173, 168, 168);
-    background-color: rgb(14, 13, 20);
 
+/* contact-box4 */
+.contact-box4 {
+  padding: 0rem 0 0 0;
+  color: rgb(173, 168, 168);
+  background-color: rgb(14, 13, 20, 0.6);
+  overflow: hidden;
+  position: relative;
 }
-.contact-box4-div1{
-    padding: 3rem 3.5rem;
-    display: flex;
+.box4-video1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  object-fit: cover;
 }
-.contact-box4-div1 img{
-    height: 3rem;
-    margin-bottom: 1rem;
-
+.box4-video2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
 }
-.contact-box4-item1{
-    width: 35%;
+.contact-box4:hover .box4-video2 {
+  display: none;
 }
-.contact-box4-item1, .contact-box4-item2, .contact-box4-item3, .contact-box4-item4{
-    padding: 0.5rem 0;
+.contact-box4-div1 {
+  padding: 3rem 3.5rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: none;
 }
-.contact-box4-item-h4{
-    margin: 1rem 0;
-    color: white;
+.contact-box4-div1 img {
+  height: 3rem;
+  margin-bottom: 1rem;
 }
-.contact-box4-item2, .contact-box4-item3, .contact-box4-item4{
-    width: 25%;
+.contact-box4-item1 {
+  width: 35%;
 }
-.contact-box4-item1 p{
-    width: 70%;
-    margin-bottom: 1.2rem;
-    font-size: 1.2rem;
+.contact-box4-item1,
+.contact-box4-item2,
+.contact-box4-item3,
+.contact-box4-item4 {
+  padding: 0.5rem 0;
 }
-.contact-box4-i{
-    border-radius: 50%;
-    font-size: 2.2rem;
+.contact-box4-item-h4 {
+  margin: 1rem 0;
+  color: white;
 }
-.contact-box4-social{
-    display: flex;
+.contact-box4-item2,
+.contact-box4-item3,
+.contact-box4-item4 {
+  width: 25%;
 }
-.contact-box4-social div{
-    font-size: 2.5rem;
-    background-color: rgba(113, 110, 110, 0.304);
-    margin-right: 0.7rem;
-    border-radius: 8px;
+.contact-box4-item1 p {
+  width: 70%;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
 }
-.contact-box4-item234 p{
-    margin-bottom: 1.55rem;
-    color: rgb(173, 168, 168);
-
+.contact-box4-item1 p:hover {
+  cursor: pointer;
+  color: white;
 }
-.contact-box4-div2{
-    height: 5rem;
-    padding: 0 3.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contact-box4-i {
+  border-radius: 50%;
+  font-size: 2.2rem;
 }
-.contact-box4-a a{
-    margin-right: 1rem;
-    text-decoration: none;
-    color:rgb(173, 168, 168);
+.contact-box4-social {
+  display: flex;
+}
+.contact-box4-social div {
+  font-size: 2.5rem;
+  background-color: rgba(113, 110, 110, 0.304);
+  margin-right: 0.7rem;
+  border-radius: 8px;
+}
+.contact-box4-social div:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2);
+}
+.contact-box4-item234 p {
+  margin-bottom: 1.55rem;
+  color: rgb(173, 168, 168);
+}
+.contact-box4-item234 p:hover {
+  color: white;
+  cursor: pointer;
+}
+.contact-box4-div2 {
+  height: 5rem;
+  padding: 0 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 1;
+  background: none;
+}
+.contact-box4-a a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgb(173, 168, 168);
+}
+.contact-box4-a a:hover {
+  color: white;
 }
 
 .btns{
@@ -366,6 +465,7 @@ html {
   background-color: orange;
   border-radius: 50%;
   position: fixed;
+  z-index: 999;
   bottom: 25px;
   right: 10px;
   display: flex;
@@ -462,7 +562,7 @@ html{
     font-size: 2.3rem;
     color: rgb(45, 45, 45);
 }
-/* blog-box1 */
+/* contact-box1 */
 .contact-box1 {
   padding: 1rem;
   display: flex;
@@ -505,7 +605,7 @@ html{
 
 /* contact box2 */
 .contact-box2{
-    padding: 6rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction:column ;
 }
@@ -514,7 +614,7 @@ html{
     margin: 1rem 0;
 }
 .contact-p1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 0.5rem ;
 }
@@ -529,21 +629,77 @@ html{
 }
 .subdiv1-item1{
     width: 48%;
+    line-height: 1rem;
+    position: relative;
 }
 .subdiv1-item1 input{
     width: 100%;
     height: 3rem;
     border-radius: 8px;
     border: 1px solid grey;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
+    position: absolute;
+    background:transparent ;
+    outline: none;
+}
+.subdiv1-item1-input:focus,
+.subdiv1-item1-input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+
+}
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.subdiv1-item1-input:focus + .labelline,
+.subdiv1-item1-input:valid + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-15px, -25px) scale(0.8);
 
 }
 .contact-div1-subdiv2{
-    margin: 1rem 0;
+    line-height: 1rem;
+    position: relative;
+    border: none;
 }
-.contact-div1-subdiv3{
-    margin: 1rem 0;
+.contact-div1-subdiv2 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 0rem;
+    margin-top: 0rem;
+    position: absolute;
+    background: transparent;
+
+}
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.contact-div1-subdiv2 input:focus,
+.contact-div1-subdiv2 input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+}
+.contact-div1-subdiv2 input:focus + .labelline,
+.contact-div1-subdiv2 input:focus + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-12px, -20px) scale(0.8);
+
 }
 .contact-div1-subdiv2 input{
     width: 100%;
@@ -554,13 +710,20 @@ html{
     margin-top: 0.2rem;
     
 }
-.contact-div1-subdiv3 input{
+.contact-div1-subdiv3{
+    margin: 1rem 0;
+}
+
+.contact-div1-subdiv3 textarea{
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     border-radius: 8px;
     border: 1px solid grey;
     padding: 0.5rem;
     margin-top: 0.2rem;
+    background: none;
+    box-sizing: border-box;
+    resize: none;
 }
 .contact-box2-button{
     height: 3rem;
@@ -609,101 +772,111 @@ html{
     width: 100%;
 }
 
-/* contact-box4 */
-.contact-box4{
-    padding: 1rem 0 ;
+  /* contact-box4 */
+  .contact-box4 {
+    padding: 0rem 0 3rem 0;
     color: rgb(173, 168, 168);
-    background-color: rgb(14, 13, 20);
+    background-color: rgb(14, 13, 20, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  .box4-video1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+  }
+  .box4-video2 {
+    display: none;
+  }
 
-}
-.contact-box4-div1{
+  .contact-box4-div1 {
     padding: 0.5rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
-}
-.contact-box4-div1 img{
+    align-items: center;
+  }
+  .contact-box4-div1 img {
     height: 2.5rem;
     margin-bottom: 0.7rem;
-
-}
-.contact-box4-item1{
+  }
+  .contact-box4-item1 {
     width: 95%;
-}
+  }
 
-.contact-box4-item-h4{
+  .contact-box4-item-h4 {
     margin: 0.1rem 0;
     color: white;
-    
-}
-.contact-box4-item2, .contact-box4-item3, .contact-box4-item4{
+  }
+  .contact-box4-item2,
+  .contact-box4-item3,
+  .contact-box4-item4 {
     width: 95%;
-}
-.contact-box4-item1 a{
+  }
+  .contact-box4-item1 a {
     width: 100%;
     margin-bottom: 0.5rem;
     font-size: 1rem;
     display: block;
-}
-.contact-box4-item1 a:hover{
+  }
+  .contact-box4-item1 a:hover {
     color: white;
     cursor: pointer;
-}
-.contact-box4-i{
+  }
+  .contact-box4-i {
     border-radius: 50%;
     font-size: 2rem;
-}
-.contact-box4-social{
+  }
+  .contact-box4-social {
     display: flex;
-}
-.contact-box4-social div{
+  }
+  .contact-box4-social div {
     height: 3rem;
-    background: none ;
+    background: none;
     margin-right: 0.7rem;
     border-radius: 8px;
-}
-.contact-box4-social div:hover{
+  }
+  .contact-box4-social div:hover {
     background-color: aliceblue;
     color: black;
-}
-.contact-box4-item234 p{
+  }
+  .contact-box4-item234 p {
     margin-bottom: 0rem;
     color: rgb(173, 168, 168);
     display: block;
     width: max-content;
     margin: 0rem;
-}
-.contact-box4-item234 p:hover{
+  }
+  .contact-box4-item234 a:hover {
     color: white;
     cursor: pointer;
     margin: 0.1rem 0;
-}
-.contact-box4-item234{
+  }
+  .contact-box4-item234 {
     font-size: 1.2rem;
     width: 95%;
-    margin:0rem 0;
-}
-.contact-box4-div2{
+    margin: 0.1rem 0;
+  }
+  .contact-box4-div2 {
     margin-top: 0.2rem;
     height: 2rem;
-    padding: 0 .9rem;
+    padding: 0 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: .7rem;
-
-}
-.contact-box4-a a{
+    font-size: 0.7rem;
+  }
+  .contact-box4-a a {
     margin-right: 1rem;
     text-decoration: none;
-    color:rgb(173, 168, 168);
-
-}
-.contact-box4-a a:hover{
+    color: rgb(173, 168, 168);
+  }
+  .contact-box4-a a:hover {
     color: white;
-}
+  }
 
 .btns{
   background-color: white;
@@ -712,6 +885,7 @@ html{
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 999;
   bottom: 0;
 }
 .btns button{
@@ -870,38 +1044,92 @@ html{
 }
 .subdiv1-item1{
     width: 48%;
+    line-height: 1rem;
+    position: relative;
 }
 .subdiv1-item1 input{
     width: 100%;
     height: 3rem;
     border-radius: 8px;
     border: 1px solid grey;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
+    position: absolute;
+    background:transparent ;
+    outline: none;
+}
+.subdiv1-item1-input:focus,
+.subdiv1-item1-input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+
+}
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.subdiv1-item1-input:focus + .labelline,
+.subdiv1-item1-input:valid + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-5px, -25px) scale(0.8);
 
 }
 .contact-div1-subdiv2{
-    margin: 1rem 0;
-}
-.contact-div1-subdiv3{
-    margin: 1rem 0;
+    line-height: 1rem;
+    position: relative;
+    border: none;
 }
 .contact-div1-subdiv2 input{
     width: 100%;
     height: 3rem;
     border-radius: 8px;
     border: 1px solid grey;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
-    
+    outline: none;
+    padding: 0rem;
+    margin-top: 0rem;
+    position: absolute;
+    background: transparent;
+
 }
-.contact-div1-subdiv3 input{
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.contact-div1-subdiv2 input:focus,
+.contact-div1-subdiv2 input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+}
+.contact-div1-subdiv2 input:focus + .labelline,
+.contact-div1-subdiv2 input:focus + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-5px, -24px) scale(0.8);
+
+}
+.contact-div1-subdiv3{
+    margin: 1rem 0;
+}
+
+.contact-div1-subdiv3 textarea{
     width: 100%;
     height: 10rem;
     border-radius: 8px;
     border: 1px solid grey;
     padding: 0.5rem;
     margin-top: 0.2rem;
+    background: none;
+    box-sizing: border-box;
+    resize: none;
 }
 .contact-box2-button{
     height: 3rem;
@@ -954,7 +1182,7 @@ html{
 .contact-box4 {
   padding: 1rem 0 0 0;
   color: rgb(173, 168, 168);
-  background-color: rgb(14, 13, 20);
+  background-color: rgb(14, 13, 20,0.5);
 }
 .contact-box4-div1 {
   padding: 3rem 3.5rem;
@@ -1016,6 +1244,10 @@ html{
   text-decoration: none;
   color: rgb(173, 168, 168);
 }
+.box4-video2{
+  display: none;
+}
+
 .btns{
   background-color: white;
   width: 100%;
@@ -1023,6 +1255,7 @@ html{
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 999;
   bottom: 0;
 }
 .btns button{
