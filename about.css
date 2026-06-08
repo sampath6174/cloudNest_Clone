@@ -668,16 +668,30 @@ html{
     padding: 1rem 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .about-box2-left{
     width: 95%;
     padding: 0.5rem;
 }
  .about-box2-right{
-    padding: 0.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 2rem;
+    height: 20rem;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 0;
+    border-radius: 8px;
+}
+.about-box2-right video{
+    
+    position: absolute;
+    left: -400px;
+    top: 70px;
+    transform: scale(1.8);
+}
+.about-box2-right:hover video:nth-child(2){
+    display: none;
 }
 .about-box2-left p{
     margin-bottom: 0.5rem;
@@ -838,7 +852,7 @@ html{
 .box4-card-3d{
     position: relative;
     width: 40%;
-    height: 40vh;
+    height: 30vh;
     transform-style: preserve-3d;
     transition: transform .3s;
 }
