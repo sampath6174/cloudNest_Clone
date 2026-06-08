@@ -257,10 +257,19 @@ html{
 .fa-check{
     color: blue;
 }
-
+.pricing-box2-card-div3{
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  align-items: start;
+}
+.fa-check, .fa-xmark{
+  margin-right: .5rem;
+}
 .pricing-box2-card-div3 p{
     font-size: 0.9rem;
-    margin: 1.6rem 0;
+    margin: .4rem 0;
 }
 .pricing-box2-card-div4{
     display:flex;
@@ -285,6 +294,8 @@ html{
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -296,6 +307,8 @@ html{
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -307,6 +320,8 @@ html{
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -837,6 +852,8 @@ input:checked + .pricing-faq-question span:nth-child(2){
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -848,6 +865,8 @@ input:checked + .pricing-faq-question span:nth-child(2){
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -860,6 +879,8 @@ input:checked + .pricing-faq-question span:nth-child(2){
     margin: auto;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     color: white;
     border-radius: 10px;
     padding: 0 0.3rem;
@@ -1363,6 +1384,8 @@ input:checked + .pricing-faq-question span:nth-child(2){
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -1374,6 +1397,8 @@ input:checked + .pricing-faq-question span:nth-child(2){
     width: max-content;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
@@ -1384,6 +1409,8 @@ input:checked + .pricing-faq-question span:nth-child(2){
   border: 2px solid blueviolet;
     position: absolute;
     top: -11px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: blueviolet;
     color: white;
     border-radius: 10px;

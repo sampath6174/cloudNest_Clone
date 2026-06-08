@@ -216,6 +216,7 @@ html {
   padding: 20px 0 0 0;
   font-size: 3.2rem;
   font-weight: bold;
+  width: 60%;
 }
 .left-word {
   position: relative;
@@ -227,7 +228,9 @@ html {
 .left-word span {
   display: block;
   animation: slide 8s infinite;
-  color: rgb(30, 141, 210);
+  background:linear-gradient(180deg, white, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .products-left-3 {
   font-size: 1.4rem;
@@ -737,7 +740,7 @@ html {
 .box3-card {
   box-sizing: border-box;
   height: 230px;
-  width: 26vw;
+  width: 26%;
   padding: 20px;
   border-radius: 10px;
   background-color: white;
@@ -762,7 +765,7 @@ html {
     left: -100px;
   }
   to {
-    left: 400px;
+    left: 500px;
   }
 }
 .box3-card:hover {
@@ -790,12 +793,14 @@ html {
   }
   50% {
     border-radius: 50%;
-    width: 20%;
-    transform: translate(225px, 0) rotate(360deg);
+    width: 50px;
+    height: 50px;
+     transform: translate(225px, 0) rotate(360deg);
   }
   75% {
     border-radius: 50%;
-    width: 20%;
+    width: 50px;
+    height: 50px;
     transform: translate(225px, 30px);
   }
   100% {
@@ -833,10 +838,9 @@ html {
   }
 }
 .box3-card-div {
-  height: 30%;
-  width: 20%;
+  height: 50px;
+  width: 50px;
   background-color: rgba(218, 190, 245, 0.612);
-  transform: scale(0.9);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -2547,8 +2551,8 @@ input:checked + .products-faq-question span:nth-child(2) {
     background-color: rgb(237, 236, 236);
   }
   .box3-card-div {
-    height: 30%;
-    width: 20%;
+    height: 30px;
+    width: 30px;
     background-color: rgba(218, 190, 245, 0.612);
     transform: scale(0.9);
     border-radius: 10px;

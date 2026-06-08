@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: Arial, Helvetica, sans-serif;
 }
 html{
@@ -560,7 +560,6 @@ html{
 }
 .box4-card-3d:hover {
     transform: rotateY(180deg);
-
 }
 .box4-card-3d:hover {
     transform: rotateY(180deg);
@@ -834,7 +833,6 @@ html{
 .box4-card .p2{
     font-size: 0.7rem;
 }
-
 /* 3d card flip */
 .about-box4-3d{
     background-color: rgba(255, 255, 255, 0.507);
@@ -883,13 +881,13 @@ html{
     align-items: center;
     color: rgb(255, 255, 255);
     transform: rotateY(180deg);
-
 }
 .back .p1{
     font-size: 1.2rem;
     background: linear-gradient(90deg, red, rgb(255, 255, 255));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+}
 .box4-card-3d:hover {
     transform: rotateY(180deg);
 
@@ -1303,7 +1301,6 @@ html{
 .box4-card .p2{
     font-size: 0.7rem;
 }
-
 
  /* about-box5 */
 .about-box5 {

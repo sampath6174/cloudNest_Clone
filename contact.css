@@ -242,6 +242,42 @@ html {
   transform: translate(-5px, -25px) scale(0.8);
 
 }
+.subdiv1-item2{
+    width: 48%;
+    line-height: 1rem;
+    position: relative;
+}
+.subdiv1-item2 input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+    position: absolute;
+    background:transparent ;
+    outline: none;
+}
+.subdiv1-item2-input:focus,
+.subdiv1-item2-input:valid{
+  border: 2px solid green;
+  padding: 0 0 0 1rem;
+
+}
+.labelline{
+  display: inline-block;
+  color: grey;
+  margin: 1rem;
+  background-color: rgb(240, 236, 236);
+  padding: 0 .2rem;
+  transition: .2s ease;
+
+}
+.subdiv1-item2-input:focus + .labelline,
+.subdiv1-item2-input:valid + .labelline{
+  color: green;
+  background-color: rgb(240, 236, 236);
+  transform: translate(-5px, -25px) scale(0.8); 
+
+}
 .contact-div1-subdiv2{
     line-height: 1rem;
     position: relative;
@@ -274,7 +310,7 @@ html {
   padding: 0 0 0 1rem;
 }
 .contact-div1-subdiv2 input:focus + .labelline,
-.contact-div1-subdiv2 input:focus + .labelline{
+.contact-div1-subdiv2 input:valid + .labelline{
   color: green;
   background-color: rgb(240, 236, 236);
   transform: translate(-5px, -25px) scale(0.8);
@@ -712,7 +748,7 @@ html{
   padding: 0 0 0 1rem;
 }
 .contact-div1-subdiv2 input:focus + .labelline,
-.contact-div1-subdiv2 input:focus + .labelline{
+.contact-div1-subdiv2 input:valid + .labelline{
   color: green;
   background-color: rgb(240, 236, 236);
   transform: translate(-12px, -20px) scale(0.8);
@@ -1131,7 +1167,7 @@ textarea:focus{
   padding: 0 0 0 1rem;
 }
 .contact-div1-subdiv2 input:focus + .labelline,
-.contact-div1-subdiv2 input:focus + .labelline{
+.contact-div1-subdiv2 input:valid + .labelline{
   color: green;
   background-color: rgb(240, 236, 236);
   transform: translate(-5px, -24px) scale(0.8);
